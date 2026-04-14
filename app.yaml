@@ -1,0 +1,5 @@
+runtime: python310
+entrypoint: gunicorn -b :$PORT app:app
+
+env_variables:
+  GEMINI_API_KEY: "REPLACE_WITH_YOUR_ACTUAL_KEY_BEFORE_DEPLOYING"
